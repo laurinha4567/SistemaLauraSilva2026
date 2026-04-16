@@ -31,6 +31,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMenuUsuario = new javax.swing.JMenuItem();
         jMenuCliente = new javax.swing.JMenuItem();
         jMenuVendedor = new javax.swing.JMenuItem();
+        jMenuUsuario1 = new javax.swing.JMenuItem();
         jMenuJogos = new javax.swing.JMenuItem();
         jMenuMovimento = new javax.swing.JMenu();
         jMenuVenda = new javax.swing.JMenuItem();
@@ -66,6 +67,15 @@ public class JFrmPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuCadastro.add(jMenuVendedor);
+
+        jMenuUsuario1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuUsuario1.setText("Fornecedor");
+        jMenuUsuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuUsuario1ActionPerformed(evt);
+            }
+        });
+        jMenuCadastro.add(jMenuUsuario1);
 
         jMenuJogos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_J, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuJogos.setText("Jogos");
@@ -139,6 +149,12 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuVendaActionPerformed
 
+    private void jMenuUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuUsuario1ActionPerformed
+        // TODO add your handling code here:
+        JDlgFornecedor jDlgFornecedor = new JDlgFornecedor(null, true);
+        jDlgFornecedor.setVisible(true);
+    }//GEN-LAST:event_jMenuUsuario1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -181,6 +197,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuJogos;
     private javax.swing.JMenu jMenuMovimento;
     private javax.swing.JMenuItem jMenuUsuario;
+    private javax.swing.JMenuItem jMenuUsuario1;
     private javax.swing.JMenuItem jMenuVenda;
     private javax.swing.JMenuItem jMenuVendaProduto;
     private javax.swing.JMenuItem jMenuVendedor;

@@ -88,17 +88,20 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel6" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="jPwdLfs_Bairro1" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="jPwdLfs_Bairro" min="-2" pref="140" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jPwdLfs_Cidade1" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
                                   <Component id="jLabel16" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="jCbo_Estado" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                                   <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -166,8 +169,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jFmtLfs_Celular" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jFmtLfs_Celular" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jTxtLfs_email" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTxtLfs_Endereco" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -182,10 +185,10 @@
               </Group>
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jPwdLfs_Bairro1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jPwdLfs_Cidade1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jFmtLfs_Cep" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPwdLfs_Bairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCbo_Estado" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -392,11 +395,24 @@
         <Property name="text" type="java.lang.String" value="Cidade"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JPasswordField" name="jPwdLfs_Bairro1">
-    </Component>
     <Component class="javax.swing.JPasswordField" name="jPwdLfs_Cidade1">
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
+    <Component class="javax.swing.JLabel" name="jLabel17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTxtLfs_Numero">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtLfs_NumeroActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="jPwdLfs_Bairro">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jPwdLfs_BairroActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jCbo_Estado">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -408,21 +424,11 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCbo_EstadoActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel17">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Numero"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLfs_Numero">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtLfs_NumeroActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>

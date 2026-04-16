@@ -80,11 +80,11 @@ public class JDlgFornecedor extends javax.swing.JDialog {
         jBtnPesquisar = new javax.swing.JButton();
         jFmtLfs_Incricao_estadual = new javax.swing.JFormattedTextField();
         jLabel16 = new javax.swing.JLabel();
-        jPwdLfs_Bairro1 = new javax.swing.JPasswordField();
         jPwdLfs_Cidade1 = new javax.swing.JPasswordField();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
         jTxtLfs_Numero = new javax.swing.JTextField();
+        jPwdLfs_Bairro = new javax.swing.JPasswordField();
+        jCbo_Estado = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -188,18 +188,24 @@ public class JDlgFornecedor extends javax.swing.JDialog {
 
         jLabel16.setText("Cidade");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-
         jLabel17.setText("Numero");
 
         jTxtLfs_Numero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTxtLfs_NumeroActionPerformed(evt);
+            }
+        });
+
+        jPwdLfs_Bairro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPwdLfs_BairroActionPerformed(evt);
+            }
+        });
+
+        jCbo_Estado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCbo_Estado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCbo_EstadoActionPerformed(evt);
             }
         });
 
@@ -256,15 +262,17 @@ public class JDlgFornecedor extends javax.swing.JDialog {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jPwdLfs_Bairro1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(44, 44, 44)
+                                    .addComponent(jPwdLfs_Bairro, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(84, 84, 84)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jPwdLfs_Cidade1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(64, 64, 64)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel11)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jCbo_Estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel11))))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(16, 16, 16)
@@ -316,8 +324,8 @@ public class JDlgFornecedor extends javax.swing.JDialog {
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jFmtLfs_Celular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jFmtLfs_Celular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTxtLfs_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTxtLfs_Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jFmtLfs_telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -329,10 +337,10 @@ public class JDlgFornecedor extends javax.swing.JDialog {
                     .addComponent(jLabel16))
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPwdLfs_Bairro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPwdLfs_Cidade1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFmtLfs_Cep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPwdLfs_Bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCbo_Estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(9, 9, 9)
@@ -408,13 +416,17 @@ public class JDlgFornecedor extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jFmtLfs_telefoneActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
     private void jTxtLfs_NumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtLfs_NumeroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtLfs_NumeroActionPerformed
+
+    private void jPwdLfs_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPwdLfs_BairroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPwdLfs_BairroActionPerformed
+
+    private void jCbo_EstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCbo_EstadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCbo_EstadoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -468,7 +480,7 @@ public class JDlgFornecedor extends javax.swing.JDialog {
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jCbo_Estado;
     private javax.swing.JFormattedTextField jFmtLfs_Celular;
     private javax.swing.JFormattedTextField jFmtLfs_Cep;
     private javax.swing.JFormattedTextField jFmtLfs_Incricao_estadual;
@@ -490,7 +502,7 @@ public class JDlgFornecedor extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPasswordField jPwdLfs_Bairro1;
+    private javax.swing.JPasswordField jPwdLfs_Bairro;
     private javax.swing.JPasswordField jPwdLfs_Cidade1;
     private javax.swing.JTextField jTxtIdlfs_Cliente;
     private javax.swing.JTextField jTxtLfs_Endereco;
