@@ -16,7 +16,7 @@ public class JDlgFornecedor extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         habilitar(false);
-        setTitle("Cadastro Cliuente");
+        setTitle("Cadastro Fornecedor");
     }
 
     private void habilitar(boolean status) {
