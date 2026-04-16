@@ -175,6 +175,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMenuJogos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogos1ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);System.exit(0);
     }//GEN-LAST:event_jMenuJogos1ActionPerformed
 
     /**
