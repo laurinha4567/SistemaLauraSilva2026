@@ -16,7 +16,7 @@ public class JDlgCliente extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         habilitar(false);
-        setTitle("Cadastro Cliuente");
+        setTitle("Cadastro Cliente");
     }
 
     private void habilitar(boolean status) {
