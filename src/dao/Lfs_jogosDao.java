@@ -17,9 +17,7 @@ import java.sql.PreparedStatement;
  */
 public class Lfs_jogosDao extends DaoAbstract {
 
-    public Lfs_jogosDao() {
-
-    }
+  
 
     @Override
 public void insert(Object object) {
@@ -51,52 +49,5 @@ public void insert(Object object) {
         Logger.getLogger(Lfs_jogosDao.class.getName()).log(Level.SEVERE, null, ex);
     }
 }
-}
-
-@Override
-public void insert(Object object) {
-
-    Lfs_jogos jogo = (Lfs_jogos) object;
-
-    try {
-
-        PreparedStatement pst = cnt.prepareStatement(
-                "insert into lfs_jogos values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-
-        pst.setInt(1, 1);
-        pst.setString(2, "GTA V");
-        pst.setString(3, "18");
-        pst.setString(4, "Acao");
-        pst.setDouble(5, 199.99);
-        pst.setString(6, "Jogo de mundo aberto");
-
-        pst.setDate(7, null); // data lançamento
-
-        pst.setString(8, "Portugues");
-
-        pst.setDate(9, null); // data adicionado
-
-        pst.setString(10, "Rockstar");
-        pst.setString(11, "10");
-        pst.setString(12, "Online");
-        pst.setString(13, "PC");
-        pst.setString(14, "Disponivel");
-
-        pst.executeUpdate();
-
-        ResultSet rs = pst.executeQuery();
-
-        while (rs.next() == true) {
-
-            System.out.println("codigo:" + rs.getInt("lfs_id_jogo"));
-            System.out.println("nome:" + rs.getString("lfs_nome_jogo"));
-
-        }
-
-    } catch (SQLException ex) {
-
-        Logger.getLogger(Lfs_jogosDao.class.getName()).log(Level.SEVERE, null, ex);
-
-    }
 }
 

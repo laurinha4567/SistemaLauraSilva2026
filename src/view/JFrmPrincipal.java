@@ -33,6 +33,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMenuVendedor = new javax.swing.JMenuItem();
         jMenuUsuario1 = new javax.swing.JMenuItem();
         jMenuJogos = new javax.swing.JMenuItem();
+        jMenuJogos2 = new javax.swing.JMenuItem();
         jMenuJogos1 = new javax.swing.JMenuItem();
         jMenuMovimento = new javax.swing.JMenu();
         jMenuVenda = new javax.swing.JMenuItem();
@@ -91,6 +92,16 @@ public class JFrmPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuCadastro.add(jMenuJogos);
+
+        jMenuJogos2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuJogos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/gravar.png"))); // NOI18N
+        jMenuJogos2.setText("Login");
+        jMenuJogos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuJogos2ActionPerformed(evt);
+            }
+        });
+        jMenuCadastro.add(jMenuJogos2);
 
         jMenuJogos1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuJogos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit.png"))); // NOI18N
@@ -178,6 +189,12 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         System.exit(0);System.exit(0);
     }//GEN-LAST:event_jMenuJogos1ActionPerformed
 
+    private void jMenuJogos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogos2ActionPerformed
+        // TODO add your handling code here:
+         JDlgLogin jDlgLogin = new JDlgLogin(null, true);
+        jDlgLogin.setVisible(true);
+    }//GEN-LAST:event_jMenuJogos2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -219,6 +236,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuCliente;
     private javax.swing.JMenuItem jMenuJogos;
     private javax.swing.JMenuItem jMenuJogos1;
+    private javax.swing.JMenuItem jMenuJogos2;
     private javax.swing.JMenu jMenuMovimento;
     private javax.swing.JMenuItem jMenuUsuario;
     private javax.swing.JMenuItem jMenuUsuario1;
