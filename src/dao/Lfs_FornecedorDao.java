@@ -6,9 +6,9 @@ import java.sql.SQLException;
 import java.util.logging.Level;    
 import java.util.logging.Logger;   
 
-public class Lfs_clienteDao extends DaoAbstract {
+public class Lfs_FornecedorDao extends DaoAbstract {
 
-    public Lfs_clienteDao() {
+    public Lfs_FornecedorDao() {
     }
 
     @Override
@@ -43,7 +43,7 @@ public class Lfs_clienteDao extends DaoAbstract {
             pst.executeUpdate();
 
         } catch (SQLException ex) {
-            Logger.getLogger(Lfs_clienteDao.class.getName())
+            Logger.getLogger(Lfs_FornecedorDao.class.getName())
                   .log(Level.SEVERE, "Erro ao inserir dados no banco", ex);
         }
     }
@@ -59,9 +59,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcCrud;
 
-public class Lfs_clienteDao extends DaoAbstract {
+public class Lfs_FornecedorDao extends DaoAbstract {
 
-    public Lfs_clienteDao() {
+    public Lfs_FornecedorDao() {
     }
 
     @Override
