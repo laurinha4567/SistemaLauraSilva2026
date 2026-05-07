@@ -37,13 +37,13 @@ public class JDlgJogos extends javax.swing.JDialog {
         jChbLfs_status_disponibilidade.setEnabled(status);
         
         
-        jBtnIncluir.setEnabled(!status);
-        jBtnAlterar.setEnabled(!status);
-        jBtnExcluir.setEnabled(!status);
-        jBtnPesquisar.setEnabled(!status);
+        jBtnLfs_Incluir.setEnabled(!status);
+        jBtnLfs_Alterar.setEnabled(!status);
+        jBtnLfs_Excluir.setEnabled(!status);
+        jBtnLfs_Pesquisar.setEnabled(!status);
         
-        jBtnConfirmar.setEnabled(status);
-        jBtnCancelar.setEnabled(status);
+        jBtnLfs_Confirmar.setEnabled(status);
+        jBtnLfs_Cancelar.setEnabled(status);
     }
 
     /**
@@ -84,12 +84,12 @@ public class JDlgJogos extends javax.swing.JDialog {
         jLabel14 = new javax.swing.JLabel();
         jCboLfs_plataforma = new javax.swing.JComboBox<>();
         jChbLfs_status_disponibilidade = new javax.swing.JCheckBox();
-        jBtnIncluir = new javax.swing.JButton();
-        jBtnCancelar = new javax.swing.JButton();
-        jBtnConfirmar = new javax.swing.JButton();
-        jBtnExcluir = new javax.swing.JButton();
-        jBtnPesquisar = new javax.swing.JButton();
-        jBtnAlterar = new javax.swing.JButton();
+        jBtnLfs_Incluir = new javax.swing.JButton();
+        jBtnLfs_Cancelar = new javax.swing.JButton();
+        jBtnLfs_Confirmar = new javax.swing.JButton();
+        jBtnLfs_Excluir = new javax.swing.JButton();
+        jBtnLfs_Pesquisar = new javax.swing.JButton();
+        jBtnLfs_Alterar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -142,51 +142,51 @@ public class JDlgJogos extends javax.swing.JDialog {
 
         jChbLfs_status_disponibilidade.setText("Disponibilidade");
 
-        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/incluir.png"))); // NOI18N
-        jBtnIncluir.setText("incluir");
-        jBtnIncluir.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/incluir.png"))); // NOI18N
+        jBtnLfs_Incluir.setText("incluir");
+        jBtnLfs_Incluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnIncluirActionPerformed(evt);
+                jBtnLfs_IncluirActionPerformed(evt);
             }
         });
 
-        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
-        jBtnCancelar.setText("cancelar");
-        jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
+        jBtnLfs_Cancelar.setText("cancelar");
+        jBtnLfs_Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnCancelarActionPerformed(evt);
+                jBtnLfs_CancelarActionPerformed(evt);
             }
         });
 
-        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/confirmar.png"))); // NOI18N
-        jBtnConfirmar.setText("confirmar");
-        jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Confirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/confirmar.png"))); // NOI18N
+        jBtnLfs_Confirmar.setText("confirmar");
+        jBtnLfs_Confirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnConfirmarActionPerformed(evt);
+                jBtnLfs_ConfirmarActionPerformed(evt);
             }
         });
 
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excluir.png"))); // NOI18N
-        jBtnExcluir.setText("excluir");
-        jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excluir.png"))); // NOI18N
+        jBtnLfs_Excluir.setText("excluir");
+        jBtnLfs_Excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnExcluirActionPerformed(evt);
+                jBtnLfs_ExcluirActionPerformed(evt);
             }
         });
 
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pesquisar.png"))); // NOI18N
-        jBtnPesquisar.setText("pesquisar");
-        jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pesquisar.png"))); // NOI18N
+        jBtnLfs_Pesquisar.setText("pesquisar");
+        jBtnLfs_Pesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnPesquisarActionPerformed(evt);
+                jBtnLfs_PesquisarActionPerformed(evt);
             }
         });
 
-        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alterar.png"))); // NOI18N
-        jBtnAlterar.setText("alterar");
-        jBtnAlterar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Alterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alterar.png"))); // NOI18N
+        jBtnLfs_Alterar.setText("alterar");
+        jBtnLfs_Alterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnAlterarActionPerformed(evt);
+                jBtnLfs_AlterarActionPerformed(evt);
             }
         });
 
@@ -265,17 +265,17 @@ public class JDlgJogos extends javax.swing.JDialog {
                                         .addComponent(jLabel12))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(jBtnIncluir)
+                        .addComponent(jBtnLfs_Incluir)
                         .addGap(30, 30, 30)
-                        .addComponent(jBtnAlterar)
+                        .addComponent(jBtnLfs_Alterar)
                         .addGap(18, 18, 18)
-                        .addComponent(jBtnExcluir)
+                        .addComponent(jBtnLfs_Excluir)
                         .addGap(18, 18, 18)
-                        .addComponent(jBtnConfirmar)
+                        .addComponent(jBtnLfs_Confirmar)
                         .addGap(18, 18, 18)
-                        .addComponent(jBtnCancelar)
+                        .addComponent(jBtnLfs_Cancelar)
                         .addGap(18, 18, 18)
-                        .addComponent(jBtnPesquisar)))
+                        .addComponent(jBtnLfs_Pesquisar)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -327,12 +327,12 @@ public class JDlgJogos extends javax.swing.JDialog {
                     .addComponent(jChbLfs_status_disponibilidade))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnAlterar)
-                    .addComponent(jBtnPesquisar)
-                    .addComponent(jBtnExcluir)
-                    .addComponent(jBtnConfirmar)
-                    .addComponent(jBtnCancelar)
-                    .addComponent(jBtnIncluir))
+                    .addComponent(jBtnLfs_Alterar)
+                    .addComponent(jBtnLfs_Pesquisar)
+                    .addComponent(jBtnLfs_Excluir)
+                    .addComponent(jBtnLfs_Confirmar)
+                    .addComponent(jBtnLfs_Cancelar)
+                    .addComponent(jBtnLfs_Incluir))
                 .addGap(15, 15, 15))
         );
 
@@ -343,35 +343,35 @@ public class JDlgJogos extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtIdlfs_ClienteActionPerformed
 
-    private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
+    private void jBtnLfs_IncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_IncluirActionPerformed
         // TODO add your handling code here:
         habilitar(true);
-    }//GEN-LAST:event_jBtnIncluirActionPerformed
+    }//GEN-LAST:event_jBtnLfs_IncluirActionPerformed
 
-    private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+    private void jBtnLfs_AlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_AlterarActionPerformed
         // TODO add your handling code here:
         habilitar(true);
-    }//GEN-LAST:event_jBtnAlterarActionPerformed
+    }//GEN-LAST:event_jBtnLfs_AlterarActionPerformed
 
-    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+    private void jBtnLfs_ExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_ExcluirActionPerformed
         // TODO add your handling code here:
         JOptionPane.showConfirmDialog(null, "Tem Certeza?");
-    }//GEN-LAST:event_jBtnExcluirActionPerformed
+    }//GEN-LAST:event_jBtnLfs_ExcluirActionPerformed
 
-    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+    private void jBtnLfs_ConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_ConfirmarActionPerformed
         // TODO add your handling code here:
         habilitar(false);
-    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+    }//GEN-LAST:event_jBtnLfs_ConfirmarActionPerformed
 
-    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+    private void jBtnLfs_CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_CancelarActionPerformed
         // TODO add your handling code here:
         habilitar(false);
-    }//GEN-LAST:event_jBtnCancelarActionPerformed
+    }//GEN-LAST:event_jBtnLfs_CancelarActionPerformed
 
-    private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
+    private void jBtnLfs_PesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_PesquisarActionPerformed
         // TODO add your handling code here:
         JOptionPane.showInputDialog(null, "Entre com a chave primária");
-    }//GEN-LAST:event_jBtnPesquisarActionPerformed
+    }//GEN-LAST:event_jBtnLfs_PesquisarActionPerformed
 
     private void jCboLfs_classificacao_indicativaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboLfs_classificacao_indicativaActionPerformed
         // TODO add your handling code here:
@@ -423,12 +423,12 @@ public class JDlgJogos extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnAlterar;
-    private javax.swing.JButton jBtnCancelar;
-    private javax.swing.JButton jBtnConfirmar;
-    private javax.swing.JButton jBtnExcluir;
-    private javax.swing.JButton jBtnIncluir;
-    private javax.swing.JButton jBtnPesquisar;
+    private javax.swing.JButton jBtnLfs_Alterar;
+    private javax.swing.JButton jBtnLfs_Cancelar;
+    private javax.swing.JButton jBtnLfs_Confirmar;
+    private javax.swing.JButton jBtnLfs_Excluir;
+    private javax.swing.JButton jBtnLfs_Incluir;
+    private javax.swing.JButton jBtnLfs_Pesquisar;
     private javax.swing.JComboBox<String> jCboLfs_classificacao_indicativa;
     private javax.swing.JComboBox<String> jCboLfs_genero;
     private javax.swing.JComboBox<String> jCboLfs_idioma;

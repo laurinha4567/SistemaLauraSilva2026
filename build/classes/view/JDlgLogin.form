@@ -29,9 +29,9 @@
                   <Component id="jPwdSenha" alignment="0" max="32767" attributes="0"/>
                   <Component id="jTxtUsuario" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jBtnEntrar" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnLfs_Entrar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="109" max="32767" attributes="0"/>
-                      <Component id="jBtnSair" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnLfs_Sair" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -60,8 +60,8 @@
               <Component id="jPwdSenha" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnEntrar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnSair" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLfs_Entrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLfs_Sair" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="53" max="32767" attributes="0"/>
           </Group>
@@ -74,20 +74,20 @@
         <Property name="text" type="java.lang.String" value="Login"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnEntrar">
+    <Component class="javax.swing.JButton" name="jBtnLfs_Entrar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Entrar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnEntrarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLfs_EntrarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnSair">
+    <Component class="javax.swing.JButton" name="jBtnLfs_Sair">
       <Properties>
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnSairActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLfs_SairActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">

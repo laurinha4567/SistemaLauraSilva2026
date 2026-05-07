@@ -33,8 +33,8 @@ public class JDlgLogin extends javax.swing.JDialog {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jBtnEntrar = new javax.swing.JButton();
-        jBtnSair = new javax.swing.JButton();
+        jBtnLfs_Entrar = new javax.swing.JButton();
+        jBtnLfs_Sair = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jTxtUsuario = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -44,17 +44,17 @@ public class JDlgLogin extends javax.swing.JDialog {
 
         jLabel1.setText("Login");
 
-        jBtnEntrar.setText("Entrar");
-        jBtnEntrar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Entrar.setText("Entrar");
+        jBtnLfs_Entrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnEntrarActionPerformed(evt);
+                jBtnLfs_EntrarActionPerformed(evt);
             }
         });
 
-        jBtnSair.setText("Sair");
-        jBtnSair.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLfs_Sair.setText("Sair");
+        jBtnLfs_Sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnSairActionPerformed(evt);
+                jBtnLfs_SairActionPerformed(evt);
             }
         });
 
@@ -72,9 +72,9 @@ public class JDlgLogin extends javax.swing.JDialog {
                     .addComponent(jPwdSenha, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTxtUsuario, javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnEntrar)
+                        .addComponent(jBtnLfs_Entrar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
-                        .addComponent(jBtnSair))
+                        .addComponent(jBtnLfs_Sair))
                     .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING))
                 .addGap(36, 36, 36))
@@ -98,20 +98,20 @@ public class JDlgLogin extends javax.swing.JDialog {
                 .addComponent(jPwdSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnEntrar)
-                    .addComponent(jBtnSair))
+                    .addComponent(jBtnLfs_Entrar)
+                    .addComponent(jBtnLfs_Sair))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBtnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSairActionPerformed
+    private void jBtnLfs_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_SairActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_jBtnSairActionPerformed
+    }//GEN-LAST:event_jBtnLfs_SairActionPerformed
 
-    private void jBtnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEntrarActionPerformed
+    private void jBtnLfs_EntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLfs_EntrarActionPerformed
                                        
     String user = jTxtUsuario.getText();
     String pass = jPwdSenha.getText();
@@ -137,7 +137,7 @@ public class JDlgLogin extends javax.swing.JDialog {
         }
     }
 
-    }//GEN-LAST:event_jBtnEntrarActionPerformed
+    }//GEN-LAST:event_jBtnLfs_EntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,8 +177,8 @@ public class JDlgLogin extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnEntrar;
-    private javax.swing.JButton jBtnSair;
+    private javax.swing.JButton jBtnLfs_Entrar;
+    private javax.swing.JButton jBtnLfs_Sair;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
