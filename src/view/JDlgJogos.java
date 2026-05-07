@@ -370,7 +370,7 @@ public class JDlgJogos extends javax.swing.JDialog {
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-         JOptionPane.showConfirmDialog(null, "Entre com o codigo");
+        JOptionPane.showInputDialog(null, "Entre com a chave primária");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     private void jCboLfs_classificacao_indicativaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboLfs_classificacao_indicativaActionPerformed
