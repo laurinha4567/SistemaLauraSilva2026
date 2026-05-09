@@ -25,7 +25,7 @@ public class Lfs_clienteDao extends DaoAbstract {
             pst.setString(4, cliente.getLfs_cpf());
 
           
-            pst.setDate(5, new java.sql.Date(cliente.getLfs_dataNascimento().getTime()));
+            pst.setDate(5, null); //igual o da sala
 
             pst.setString(6, cliente.getLfs_RG());
             pst.setString(7, cliente.getLfs_Cep());
@@ -35,7 +35,7 @@ public class Lfs_clienteDao extends DaoAbstract {
             pst.setString(11, cliente.getLfs_preferencias());
             pst.setString(12, cliente.getLfs_observacoes());
             
-            pst.setDate(13, null);
+            pst.setDate(13, null); // igual o da sala
 
             pst.setString(14, cliente.getLfs_bairro());
             pst.setString(15, cliente.getLfs_logradouro());

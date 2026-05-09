@@ -33,7 +33,6 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jMenuVendedor = new javax.swing.JMenuItem();
         jMenuUsuario1 = new javax.swing.JMenuItem();
         jMenuJogos = new javax.swing.JMenuItem();
-        jMenuJogos2 = new javax.swing.JMenuItem();
         jMenuJogos1 = new javax.swing.JMenuItem();
         jMenuMovimento = new javax.swing.JMenu();
         jMenuVenda = new javax.swing.JMenuItem();
@@ -93,16 +92,6 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         });
         jMenuCadastro.add(jMenuJogos);
 
-        jMenuJogos2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuJogos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/gravar.png"))); // NOI18N
-        jMenuJogos2.setText("Login");
-        jMenuJogos2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuJogos2ActionPerformed(evt);
-            }
-        });
-        jMenuCadastro.add(jMenuJogos2);
-
         jMenuJogos1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuJogos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit.png"))); // NOI18N
         jMenuJogos1.setText("Sair");
@@ -150,33 +139,20 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuUsuarioActionPerformed
-        // TODO add your handling code here:
-         JDlgUsuario jDlgUsuario = new JDlgUsuario(null, true);
-        jDlgUsuario.setVisible(true);
-    }//GEN-LAST:event_jMenuUsuarioActionPerformed
-
-    private void jMenuClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuClienteActionPerformed
-        // TODO add your handling code here:
-         JDlgCliente jDlgCliente = new JDlgCliente(null, true);
-        jDlgCliente.setVisible(true);
-    }//GEN-LAST:event_jMenuClienteActionPerformed
-
-    private void jMenuVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuVendedorActionPerformed
-        // TODO add your handling code here:
-        JDlgVendedor jDlgVendedor = new JDlgVendedor(null, true);
-        jDlgVendedor.setVisible(true);
-    }//GEN-LAST:event_jMenuVendedorActionPerformed
-
-    private void jMenuJogosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogosActionPerformed
-        // TODO add your handling code here:
-         JDlgJogos jDlgJogos = new JDlgJogos(null, true);
-        jDlgJogos.setVisible(true);
-    }//GEN-LAST:event_jMenuJogosActionPerformed
-
     private void jMenuVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuVendaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuVendaActionPerformed
+
+    private void jMenuJogos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogos1ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);System.exit(0);
+    }//GEN-LAST:event_jMenuJogos1ActionPerformed
+
+    private void jMenuJogosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogosActionPerformed
+        // TODO add your handling code here:
+        JDlgJogos jDlgJogos = new JDlgJogos(null, true);
+        jDlgJogos.setVisible(true);
+    }//GEN-LAST:event_jMenuJogosActionPerformed
 
     private void jMenuUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuUsuario1ActionPerformed
         // TODO add your handling code here:
@@ -184,16 +160,23 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         jDlgFornecedor.setVisible(true);
     }//GEN-LAST:event_jMenuUsuario1ActionPerformed
 
-    private void jMenuJogos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogos1ActionPerformed
+    private void jMenuVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuVendedorActionPerformed
         // TODO add your handling code here:
-        System.exit(0);System.exit(0);
-    }//GEN-LAST:event_jMenuJogos1ActionPerformed
+        JDlgVendedor jDlgVendedor = new JDlgVendedor(null, true);
+        jDlgVendedor.setVisible(true);
+    }//GEN-LAST:event_jMenuVendedorActionPerformed
 
-    private void jMenuJogos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuJogos2ActionPerformed
+    private void jMenuClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuClienteActionPerformed
         // TODO add your handling code here:
-         JDlgLogin jDlgLogin = new JDlgLogin(null, true);
-        jDlgLogin.setVisible(true);
-    }//GEN-LAST:event_jMenuJogos2ActionPerformed
+        JDlgCliente jDlgCliente = new JDlgCliente(null, true);
+        jDlgCliente.setVisible(true);
+    }//GEN-LAST:event_jMenuClienteActionPerformed
+
+    private void jMenuUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuUsuarioActionPerformed
+        // TODO add your handling code here:
+        JDlgUsuario jDlgUsuario = new JDlgUsuario(null, true);
+        jDlgUsuario.setVisible(true);
+    }//GEN-LAST:event_jMenuUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -236,7 +219,6 @@ public class JFrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuCliente;
     private javax.swing.JMenuItem jMenuJogos;
     private javax.swing.JMenuItem jMenuJogos1;
-    private javax.swing.JMenuItem jMenuJogos2;
     private javax.swing.JMenu jMenuMovimento;
     private javax.swing.JMenuItem jMenuUsuario;
     private javax.swing.JMenuItem jMenuUsuario1;

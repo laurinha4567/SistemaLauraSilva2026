@@ -9,9 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  *
@@ -32,9 +30,8 @@ public class UsuariosDao extends DaoAbstract {
             pst.setInt(1, usuario.getIdusuarios());
             pst.setString(2, usuario.getNome());//nome
             pst.setString(3, usuario.getApelido());//apelido
-            pst.setString(4, usuario.getCpf());//cpf
-            java.sql.Date dataNas = new java.sql.Date(usuario.getDataNascimento().getTime());
-            pst.setDate(5, dataNas);//data nas
+            pst.setString(4, usuario.getCpf());//cpf            
+            pst.setDate(5, null);//data nas
             pst.setString(6, usuario.getSenha());//senha
             pst.setInt(7, usuario.getNivel());//nivel
             pst.setString(8, usuario.getAtivo());//ativo
